@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    font-family: 'Raleway';
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+    color : #f44336;
+    padding-left: 10px;
+    gap: 20px;
+    width: 100%;
+    height: 10vh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-article{
+    background-image: url("../asset/london2.jpg");
+    width: 80%;
+    min-height: 90vh;
+    position: relative;
+}
+
+.travel-select{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    background-color: #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.travel-select nav{
+    height: 10%;
+    display: flex;
+}
+
+.travel-select nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    background-color: black;
+    color: white
+}
+
+.travel-select nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    height: 100%;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.2s    ;
+}
+
+.travel-select nav ul li:hover{
+    background-color: #d53c31;
+}
+
+.nav-selected{
+    background-color: #f44336;
+}
+
+.flight-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 90%;
+}
+
+.dates-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flight-button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border: 0;
+    width: 100%;
+    height: 35px;
+}
